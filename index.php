@@ -12,7 +12,7 @@
 </head>
 <body class="bg-secondary">
     <?php include "header.php"; ?>
-
+    <?php include "connection.php"?>
     
     <div class="row mt-3" style="margin:auto">
         <!-- Create User Form -->
@@ -20,7 +20,7 @@
             <div class="card ">
                 <h1 class="card-header text-center ">Create User</h1>
                 <div class="card-body">
-                    <form action="" method="post">
+                    <form action="registerUser.php" method="post">
                         <div class="form-floating mb-3 mt-1">
                             <input type="text" name="nombres" id="nombres" placeholder="Nombres" class="form-control">
                             <label for="nombres">Nombres</label>
@@ -64,27 +64,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Jose</td>
-                        <td>Ozuna</td>
-                        <td>334-234-234</td>
-                        <td>Kino #18</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Jose</td>
-                        <td>Ozuna</td>
-                        <td>334-234-234</td>
-                        <td>Kino #18</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Jose</td>
-                        <td>Ozuna</td>
-                        <td>334-234-234</td>
-                        <td>Kino #18</td>
-                        <td></td>
-                    </tr>
                     <tr>
                         <td>Jose</td>
                         <td>Ozuna</td>
