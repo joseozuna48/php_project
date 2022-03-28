@@ -6,6 +6,9 @@
     <!-- bootstrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font awesome icons  -->
+    <script src="https://kit.fontawesome.com/09af971b97.js" crossorigin="anonymous"></script>
     
 
     <title>Document</title>
@@ -64,13 +67,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Jose</td>
-                        <td>Ozuna</td>
-                        <td>334-234-234</td>
-                        <td>Kino #18</td>
-                        <td></td>
-                    </tr>
+                    <?php include "displayUser.php" ?>
 
                 </tbody>
             </table>
