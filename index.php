@@ -9,6 +9,9 @@
 
     <!-- font awesome icons  -->
     <script src="https://kit.fontawesome.com/09af971b97.js" crossorigin="anonymous"></script>
+
+    <!-- custom style  -->
+    <link rel="stylesheet" href="styles.css">
     
 
     <title>Document</title>
