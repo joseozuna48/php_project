@@ -1,4 +1,4 @@
-<?php include "connection.php"?>
+<?php include "./connection.php"?>
 <?php 
     
     if(isset($_POST["edit"])){
@@ -8,7 +8,7 @@
         SET nombre = '{$_POST["nombres"]}' , apellidos = '{$_POST["apellidos"]}', direccion = '{$_POST["direccion"]}', numTel = '{$_POST["tel"]}' 
         WHERE id = {$id}";
         $conn->query($sql);
-        header('Location: index.php');
+        header('Location: ../index.php');
     }
 
     $sql = "SELECT * FROM cliente WHERE id={$_GET['id']} ";
@@ -24,13 +24,13 @@
 
 ?>
 
-<?php include "header.php"?>
+<?php include "../header.php"?>
 
     <div class="col-4 mt-5" style="margin:auto" >
         <div class="card ">
             <h1 class="card-header text-center ">Editar usuario</h1>
             <div class="card-body">
-                <form action="editUser.php?id=<?php echo $_GET['id']?>" method="post">
+                <form action="./editUser.php?id=<?php echo $_GET['id']?>" method="post">
                     <div class="form-floating mb-3 mt-1">
                         <input type="text" name="nombres" id="nombres" placeholder="Nombres" class="form-control" value=<?php echo "{$nombre}" ?> >
                         <label for="nombres">Nombres</label>
@@ -60,4 +60,4 @@
         </div>
     </div>
 
-<?php include "footer.php"?>
+<?php include "../footer.php"?>

@@ -1,6 +1,6 @@
 <?php
 
-include "connection.php";
+include "./connection.php";
 // save Variables
 $nombres = $_POST["nombres"];
 $apellidos = $_POST["apellidos"];
@@ -16,7 +16,7 @@ VALUES('" . $nombres . "','". $apellidos . "','" . $direccion . "','". $tel . "'
 
 if($conn->query($sql) == TRUE){
     echo "New record created successfully.";
-    header('Location: index.php');
+    header('Location: ../index.php');
 }else{
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

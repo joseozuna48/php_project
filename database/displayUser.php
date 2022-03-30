@@ -1,5 +1,5 @@
 <?php
-include "connection.php";
+include "./database/connection.php";
 
 
 // Display user table
@@ -21,10 +21,10 @@ if($result->num_rows > 0){
         <td>{$direccion}</td>
         <td>{$numTel}</td>
         <td>
-        <a href='editUser.php?id={$id}' id='edit'>
+        <a href='./database/editUser.php?id={$id}' id='edit'>
             <i class='fa-solid fa-pen-to-square'></i>
         </a>
-        <a href='deleteUser.php?id={$id}' id='delete'>
+        <a href='./database/deleteUser.php?id={$id}' id='delete'>
             </i><i class='fa-solid fa-trash'></i>
         </a>
         </td>
@@ -33,11 +33,11 @@ if($result->num_rows > 0){
 
 }else{
     echo "<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> </td>
+    <td> </td>
+    <td>  </td>
+    <td>  </td>
+    <td>  </td>
 </tr>";
 }
 
