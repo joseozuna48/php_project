@@ -21,7 +21,7 @@ if($result->num_rows > 0){
         <td>{$direccion}</td>
         <td>{$numTel}</td>
         <td>
-        <a href='edit.php?id={$id}' id='edit'>
+        <a href='editUser.php?id={$id}' id='edit'>
             <i class='fa-solid fa-pen-to-square'></i>
         </a>
         <a href='deleteUser.php?id={$id}' id='delete'>
